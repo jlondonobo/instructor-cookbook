@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "secondary-instructor"
+version = "0.1.0"
+description = ""
+authors = ["jlondonobo <j.londonobo@gmail.com>"]
+readme = "README.md"
+packages = [{include = "secondary_instructor"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+instructor = {git = "https://github.com/jxnl/instructor"}
+openai = "^1.25.1"
+pydantic = "^2.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
